@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler, StandardScaler, OneHotEncoder
-from sklearn.compose import ColumnTransformer
 
 class FillMissingValues(BaseEstimator, TransformerMixin):
     def fit(self, X, y=None):

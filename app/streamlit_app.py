@@ -4,10 +4,12 @@ import numpy as np
 import pickle
 import matplotlib.pyplot as plt
 from io import StringIO
+from utils.utils import load_model
 
 # Load the trained pipeline
-with open('model_pipeline.pkl', 'rb') as f:
-    model_pipeline = pickle.load(f)
+# with open('model_pipeline.pkl', 'rb') as f:
+#     model_pipeline = pickle.load(f)
+model_pipeline = load_model('model_pipeline.pkl')
 
 st.title("Sales Prediction")
 

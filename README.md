@@ -3,13 +3,24 @@
 ## Overview
 This project aims to predict sales using a machine learning pipeline. The pipeline includes data preprocessing, feature engineering, multicollinearity reduction, and model training.
 
-## Project Structure
-# Sales Prediction Project
 
-## Overview
-This project aims to predict sales using a machine learning pipeline. The pipeline includes data preprocessing, feature engineering, multicollinearity reduction, and model training.
+## Data
+- **Source**: The dataset used for this project comes from [Kaggle's Sales Dataset](https://www.kaggle.com/sales-dataset).
+- **Description**: The dataset consists of sales data collected from various stores over a period of time. It includes features such as date, store number, sales, and other related attributes.
+- **Columns**:
+    - `date`: The date of the sales record.
+    - `store_number`: The unique identifier for the store.
+    - `sales`: The sales amount for that particular date and store.
+    - `customers`: The number of customers for that particular date and store.
+    - `open`: Indicates whether the store was open on that date (1 = open, 0 = closed).
+    - `promo`: Indicates whether a promo was active on that date (1 = active, 0 = not active).
+    - `state_holiday`: Indicates whether the date is a state holiday.
+    - `school_holiday`: Indicates whether the date is a school holiday.
+The rest of the feature names are self explantory. For further details, check the Kaggle website.
 
 ## Project Structure
+
+```plaintext
 sales_prediction/
 ├── app/
 │ ├── init.py
