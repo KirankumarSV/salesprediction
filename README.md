@@ -5,7 +5,7 @@ This project aims to predict sales using a machine learning pipeline. The pipeli
 
 
 ## Data
-- **Source**: The dataset used for this project comes from [Kaggle's Sales Dataset](https://www.kaggle.com/sales-dataset).
+- **Source**: The dataset used for this project comes from [Kaggle's Sales Dataset](https://www.kaggle.com/c/rossmann-store-sales/data).
 - **Description**: The dataset consists of sales data collected from various stores over a period of time. It includes features such as date, store number, sales, and other related attributes.
 - **Columns**:
     - `date`: The date of the sales record.
