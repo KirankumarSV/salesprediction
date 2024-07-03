@@ -46,7 +46,7 @@ sales_prediction/
 ├── requirements.txt
 ├── setup.py
 └── README.md
-
+```
 
 
 ## Setup
