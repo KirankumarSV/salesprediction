@@ -36,15 +36,15 @@ sales_prediction/
 | ├── transformations.py
 │ └── feature_engineering.py
 ├── input_data/
-| ├── __init__.py
-| └── rossmann-store-sales/  # The dataset will be downloaded here
+| └── rossmann-store-sales/  # The dataset are downloaded here
 ├── model/
 │ ├── init.py
-│ ├── train.py
 │ ├── vif_selector.py
 │ └── select_k_best.py
 ├── scripts/
 │ ├── init.py
+| ├── download_data.py
+| ├── evaluate_model.py
 │ └── run_training.py
 ├── utils/
 │ ├── init.py
