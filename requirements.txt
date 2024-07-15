@@ -6,4 +6,6 @@ statsmodels
 streamlit
 matplotlib
 datetime
+kaggle
+inflection
 -e .

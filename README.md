@@ -24,14 +24,20 @@ The rest of the feature names are self explantory. For further details, check th
 sales_prediction/
 ├── app/
 │ ├── init.py
+| ├── custom_pipeline.py
 │ ├── pipeline.py
 │ └── streamlit_app.py
-├── data/
+├── data_preprocessing/
 │ ├── init.py
 │ └── preprocessing.py
 ├── feature_engineering/
 │ ├── init.py
+| ├── drop_columns.py
+| ├── transformations.py
 │ └── feature_engineering.py
+├── input_data/
+| ├── __init__.py
+| └── rossmann-store-sales/  # The dataset will be downloaded here
 ├── model/
 │ ├── init.py
 │ ├── train.py
@@ -42,6 +48,7 @@ sales_prediction/
 │ └── run_training.py
 ├── utils/
 │ ├── init.py
+| ├── logger.py
 │ └── utils.py
 ├── requirements.txt
 ├── setup.py
@@ -61,20 +68,23 @@ sales_prediction/
     pip install -r requirements.txt
     ```
 
-3. Run the training script:
+3. Run the download_data script to download the dataset using Kaggle API. Ensure to have kaggle.json file at ~/.kaggle/kaggle.json:
+    ```bash
+    python scripts/download_data.py
+    ```
+
+4. Run the training script:
     ```bash
     python scripts/run_training.py
     ```
 
-4. Start the Streamlit app:
+5. Start the Streamlit app:
     ```bash
     streamlit run app/streamlit_app.py
     ```
 
 ## Usage
 - **Single Prediction**: Enter details in the Streamlit app to predict sales for a single data point.
-- **Batch Prediction**: Upload a CSV file in the Streamlit app to predict sales for multiple data points.
 
 ## License
 This project is licensed under the MIT License.
-

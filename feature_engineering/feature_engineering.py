@@ -26,6 +26,10 @@ class FeatureEngineering(BaseEstimator, TransformerMixin):
 
         return X
 
+    def get_feature_names_out(self, input_features=None):
+        return self.columns_.tolist()
+
+
 class CyclicalFeatures(BaseEstimator, TransformerMixin):
     def __init__(self, columns, max_values):
         self.columns = columns

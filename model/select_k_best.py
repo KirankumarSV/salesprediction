@@ -16,7 +16,7 @@ class SelectKBestFeatures(BaseEstimator, TransformerMixin):
         scores = self.selector.scores_
         self.feature_scores_ = pd.DataFrame({'feature': X.columns, 'score': scores})
         self.columns_ = self.feature_scores_[self.feature_scores_['score'] > self.threshold]['feature'].values
-        
+        print("Select K best features done")
         return self
 
     def transform(self, X, y=None):
